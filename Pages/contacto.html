@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Dev/styles/header.css">
+    <link rel="stylesheet" href="/Dev/styles/contenido.css">
+
+</head>
+<body>
+    <header>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/index.html#quienes_somos">¿Quiénes somos?</a></li>
+                    <li><a href="/Pages/servicios.html">Servicios</a></li>
+                    <li><a href="/Pages/productos.html">Productos</a></li>
+                    <li><a href="/Pages/Galeria.html">Galería</a></li>
+                    <li><a href="/Pages/contacto.html">Contacto</a></li>
+                </ul>
+                <ul>
+                    <li><img class="logo" src="/asserts/cogansonortee.png"></li>
+                    <li class="hideOnMobile"><a href="/index.html">Inicio</a></li>
+                    <li class="hideOnMobile"><a href="/index.html#quienes_somos">¿Quiénes somos?</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/servicios.html">Servicios</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/productos.html">Productos</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/Galeria.html">Galería</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/contacto.html">Contacto</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar(){
+                    const sidebar=document.querySelector('.sidebar');     /*queremos Obtener el elemento de la barra lateral y almacenarlo en una variable*/
+                    sidebar.style.display='flex';
+                }
+                function hideSidebar(){
+                    const sidebar=document.querySelector('.sidebar');     /*queremos Obtener el elemento de la barra lateral y almacenarlo en una variable*/
+                    sidebar.style.display='none';
+                }
+            </script>
+    </header>
+    
+    <div class="portada">
+        <img src="/asserts/social/portada.jpg"width="100%">
+        <h1>Contáctanos</h1>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="content">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Ubicación</h3>
+                <p>Toledo, Norte de Santander<br><br></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <i class="fas fa-clock"></i>
+                <h3>Horarios</h3>
+                <p>Lunes - Sábado: 7am - 6pm<br><br></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <i class="fab fa-facebook"></i>
+                <h3>Facebook</h3>
+                <p>Cogansonorte TL</p>
+                <a href="https://www.facebook.com/tupagina" target="_blank">Visitar Facebook</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <i class="far fa-envelope"></i>
+                <h3>Email</h3>
+                <p>Cogansonorte<br>@hotmail.com<br> <br></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26622.48098024995!2d-72.49429690480127!3d7.302615183779702!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e689b25b1017a69%3A0x255f5b33a60dee2!2sCOGANSONORTE!5e0!3m2!1ses!2sco!4v1699480165598!5m2!1ses!2sco" width="90%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+            
+    <footer>
+        <img src="/asserts/logg (1).png">
+        <h3>Cooperativa de Ganaderos del Sur Oriente de Norte de Santander <br> Toledo - Labateca - Chinácota</h3>
+    </footer> 
+</body>
+</html>

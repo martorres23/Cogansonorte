@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Dev/styles/header.css">
+    <link rel="stylesheet" href="/Dev/styles/contenido.css">
+    <link rel="stylesheet" href="/Dev/styles/swiper.css">
+
+</head>
+<body>
+    <header>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/index.html#quienes_somos">¿Quiénes somos?</a></li>
+                    <li><a href="/Pages/servicios.html">Servicios</a></li>
+                    <li><a href="/Pages/productos.html">Productos</a></li>
+                    <li><a href="/Pages/Galeria.html">Galería</a></li>
+                    <li><a href="/Pages/contacto.html">Contacto</a></li>
+                </ul>
+                <ul>
+                    <li><img class="logo" src="/asserts/cogansonortee.png"></li>
+                    <li class="hideOnMobile"><a href="/index.html">Inicio</a></li>
+                    <li class="hideOnMobile"><a href="/index.html#quienes_somos">¿Quiénes somos?</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/servicios.html">Servicios</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/productos.html">Productos</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/Galeria.html">Galería</a></li>
+                    <li class="hideOnMobile"><a href="/Pages/contacto.html">Contacto</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar(){
+                    const sidebar=document.querySelector('.sidebar');     /*queremos Obtener el elemento de la barra lateral y almacenarlo en una variable*/
+                    sidebar.style.display='flex';
+                }
+                function hideSidebar(){
+                    const sidebar=document.querySelector('.sidebar');     /*queremos Obtener el elemento de la barra lateral y almacenarlo en una variable*/
+                    sidebar.style.display='none';
+                }
+            </script>
+    </header>
+
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" direction="vertical"
+    space-between="30" mousewheel="true">
+        <swiper-slide>
+            <div class="item">
+                <img src="/asserts/servicio/inseminacion.jpg" alt="producto">
+                <div class="item-info">
+                    <h2 class="product-name">INSEMINACIÓN ARTIFICIAL</h2>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus nesciunt eius animi! At facilis vel maxime.</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="item">
+                <img src="/asserts/servicio/ecografo.jpeg" alt="producto">
+                <div class="item-info">
+                    <h2 class="product-name">SERVICIO DE ECÓGRAFO</h2>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus nesciunt eius animi! At facilis vel maxime.</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="item">
+                <img src="/asserts/servicio/ensilaje.jpg" alt="producto">
+                <div class="item-info">
+                    <h2 class="product-name">ENSILAJE DE MAIZ</h2>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus nesciunt eius animi! At facilis vel maxime.</p>
+                </div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+
+    <footer>
+        <img src="/asserts/logg (1).png">
+        <h3>Cooperativa de Ganaderos del Sur Oriente de Norte de Santander <br> Toledo - Labateca - Chinácota</h3>
+    </footer> 
+</body>
+</html>
